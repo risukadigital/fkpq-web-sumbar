@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FKPQ SUMBAR</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #FFD54F;
+    color: #222;
+}
+
+    h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    nav {
+    margin: 20px auto;
+    padding: 15px 20px;
+    background-color: #0b5ed7;
+    border-radius: 12px;
+    max-width: 1100px;
+}
+
+    nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+   .produk-card {
+    width: 250px;
+    margin: 15px;
+    padding: 30px 25px;
+    border: none;
+    border-radius: 16px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: 0.2s ease;
+}
+
+   .produk-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+    .produk-card h3 {
+    color: #0b5ed7;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+    .produk-card p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+    #produk {
+        max-width: 1250px;
+        margin: 70px auto;
+        padding: 0 20px;
+    }
+
+    #produk h2 {
+        font-size: 36px;
+        color: #123a6d;
+        margin-bottom: 10px;
+    }
+
+    #produk > p {
+        color: #666;
+        margin-bottom: 30px;
+    }
+
+    #website {
+        scroll-margin-top: 30px;
+    }
+
+   #aplikasi {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff8e1;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+    #aplikasi h2 {
+    font-size: 40px;
+    color: #0b5ed7;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+    #aplikasi > p {
+        color: #666;
+        margin-bottom: 35px;
+    }
+
+    #aplikasi .produk-card {
+        width: 420px;
+        max-width: 90%;
+    }
+
+    #portofolio {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+    #portofolio h2 {
+        font-size: 36px;
+        color: #123a6d;
+        margin-bottom: 10px;
+    }
+
+    #portofolio > p {
+        color: #666;
+        margin-bottom: 35px;
+    }
+
+    #portofolio .produk-card {
+        width: 420px;
+        max-width: 90%;
+    }
+
+    #kontak {
+        max-width: 1000px;
+        margin: 90px auto;
+        padding: 0 20px;
+    }
+
+    #kontak h2 {
+        font-size: 36px;
+        color: #123a6d;
+        margin-bottom: 30px;
+    }
+
+    .hero {
+    padding: 50px 20px 45px;
+    background: #ffffff;
+    max-width: 1100px;
+    margin: 25px auto 0;
+    text-align: center;
+    border-bottom: 4px solid #0b5ed7;
+}
+
+    .hero h1 {
+    margin: 20px 0 10px;
+    font-size: 46px;
+    color: #123a6d;
+    font-weight: 800;
+}
+
+   .hero p {
+    margin: 0;
+    font-size: 21px;
+    color: #555;
+}
+
+    .hero a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background-color: #e53935;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+    .hero a:hover {
+        background-color: #084298;
+    }
+
+    
+    footer {
+        margin-top: 80px;
+        padding: 25px;
+        background-color: #123a6d;
+        color: white;
+    }
+
+    footer p {
+        font-size: 16px;
+        margin: 0;
+    }
+.produk-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #0b5ed7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.produk-card a:hover {
+    background-color: #084298;
+}
+#tentang {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 50px 30px;
+    background-color: #fff3cd;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+#tentang h2 {
+    font-size: 36px;
+    color: #0b5ed7;
+    margin-bottom: 20px;
+}
+
+#tentang p {
+    color: #444;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 10px auto;
+}
+#alamat {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 50px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+#alamat h2 {
+    font-size: 36px;
+    color: #0b5ed7;
+    margin-bottom: 25px;
+}
+
+#alamat p {
+    color: #444;
+    line-height: 1.8;
+    margin: 8px 0;
+}
+#youtube {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 50px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+#youtube h2 {
+    font-size: 36px;
+    color: #0b5ed7;
+    margin-bottom: 15px;
+}
+
+#youtube p {
+    color: #555;
+    line-height: 1.6;
+}
+
+#youtube iframe {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+#media-sosial {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 50px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+#media-sosial h2 {
+    font-size: 36px;
+    color: #0b5ed7;
+    margin-bottom: 15px;
+}
+
+#media-sosial p {
+    color: #555;
+    line-height: 1.6;
+}
+
+#media-sosial a {
+    color: #0b5ed7;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#media-sosial a:hover {
+    text-decoration: underline;
+}
+#galeri {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 50px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+#galeri h2 {
+    font-size: 36px;
+    color: #0b5ed7;
+    margin-bottom: 15px;
+}
+
+#galeri > p {
+    color: #555;
+    line-height: 1.6;
+}
+#kontak {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 50px 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+#kontak h2 {
+    font-size: 36px;
+    color: #0b5ed7;
+    margin-bottom: 25px;
+}
+
+#kontak .produk-card {
+    width: 420px;
+    max-width: 90%;
+}
+
+/* KEGIATAN & BERITA */
+
+#kegiatan {
+    padding: 60px 25px;
+    background: #f5f7fa;
+    text-align: center;
+}
+
+#kegiatan h2 {
+    color: #123a6d;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.berita-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.berita-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.berita-image {
+    height: 170px;
+    background: #dfe6ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #667;
+    font-weight: 600;
+}
+
+.berita-content {
+    padding: 20px;
+}
+
+.berita-content small {
+    color: #0b5ed7;
+    font-weight: 700;
+}
+
+.berita-content h3 {
+    color: #123a6d;
+    margin: 10px 0;
+}
+
+.berita-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.berita-content a {
+    color: #123a6d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="hero">
+<img src="Slide1.png" style="display:block; width:300px; height:auto; margin:0 auto;">
+<h1>DPW FKPQ SUMATERA BARAT</h1>
+
+<p>Forum Komunikasi Pendidikan Al-Qur'an</p>
+
+    <a href="https://wa.me/6285831434588" target="_blank">
+        Hubungi Kami
+    </a>
+
+</div>
+<nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#profil">Profil FKPQ</a>
+    <a href="#pengurus">Pengurus</a>
+    <a href="#kegiatan">Kegiatan</a>
+    <a href="#berita">Berita</a>
+    <a href="#lembaga">Lembaga</a>
+    <a href="#guru">Guru</a>
+    <a href="#pendaftaran">Pendaftaran</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+</nav>
+<section id="profil">
+    <h2>Tentang FKPQ Sumatera Barat</h2>
+
+    <p>
+        Forum Komunikasi Pendidikan Al-Qur'an (FKPQ)
+        Sumatera Barat merupakan wadah komunikasi dan
+        koordinasi dalam mendukung perkembangan pendidikan
+        Al-Qur'an di Sumatera Barat.
+    </p>
+
+    <p>
+        Website ini menjadi pusat informasi organisasi,
+        kegiatan, data lembaga, data guru, serta layanan
+        pendaftaran FKPQ Sumatera Barat.
+    </p>
+
+    <a href="#pengurus">Mengenal Pengurus</a>
+</section>
+
+<section id="kegiatan">
+    <h2>Kegiatan & Berita</h2>
+
+    <p class="section-intro">
+        Informasi terbaru mengenai kegiatan dan perkembangan
+        FKPQ Sumatera Barat.
+    </p>
+
+    <div class="berita-grid">
+
+        <article class="berita-card">
+            <div class="berita-image">
+                Foto Kegiatan
+            </div>
+
+            <div class="berita-content">
+                <small>KEGIATAN</small>
+                <h3>Kegiatan FKPQ Sumatera Barat</h3>
+                <p>
+                    Informasi kegiatan dan agenda FKPQ
+                    Sumatera Barat akan ditampilkan di sini.
+                </p>
+                <a href="#">Selengkapnya</a>
+            </div>
+        </article>
+
+        <article class="berita-card">
+            <div class="berita-image">
+                Foto Kegiatan
+            </div>
+
+            <div class="berita-content">
+                <small>BERITA</small>
+                <h3>Informasi FKPQ Sumatera Barat</h3>
+                <p>
+                    Berita dan informasi terbaru organisasi
+                    akan ditampilkan di bagian ini.
+                </p>
+                <a href="#">Selengkapnya</a>
+            </div>
+        </article>
+
+        <article class="berita-card">
+            <div class="berita-image">
+                Dokumentasi
+            </div>
+
+            <div class="berita-content">
+                <small>INFORMASI</small>
+                <h3>Agenda FKPQ</h3>
+                <p>
+                    Agenda dan informasi penting FKPQ
+                    akan ditampilkan secara berkala.
+                </p>
+                <a href="#">Selengkapnya</a>
+            </div>
+        </article>
+
+    </div>
+</section>
+<div id="waktu">
+
+    <div id="tanggal"></div>
+    <div id="jam"></div>
+
+</div>
+
+</section>
+
+<section id="youtube">
+
+    <h2>YouTube FKPQ SUMBAR</h2>
+
+    <p>
+        Video dan dokumentasi kegiatan FKPQ SUMBAR.
+    </p>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="YouTube FKPQ SUMBAR"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</section>
+<section id="media-sosial">
+
+    <h2>Media Sosial</h2>
+
+    <p>
+        Ikuti FKPQ SUMBAR melalui media sosial kami.
+    </p>
+
+    <p>
+        <a href="https://web.facebook.com/HUiTekno" target="_blank">
+            Facebook
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.instagram.com/huitekno/" target="_blank">
+            Instagram
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.tiktok.com/@huitekno03" target="_blank">
+            TikTok
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.youtube.com/@HUiTekno" target="_blank">
+            YouTube
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.threads.com/@huitekno?hl=id" target="_blank">
+            Threads
+        </a>
+    </p>
+
+</section>
+<section id="galeri">
+
+    <h2>Galeri</h2>
+
+    <p>
+        Dokumentasi produk dan kegiatan FKPQ SUMBAR.
+    </p>
+
+    <div class="produk-card">
+        <h3>Dokumentasi FKPQ SUMBAR</h3>
+
+        <p>
+            Galeri akan menampilkan berbagai produk,
+            pekerjaan, dan kegiatan kami.
+        </p>
+    </div>
+</section>
+
+<section id="kontak">
+
+    <h2>Kontak</h2>
+
+    <div class="produk-card">
+
+        <h3>HUI TEKNO</h3>
+
+        <p>
+            Untuk kebutuhan produk teknologi dan solusi digital,
+            silakan hubungi kami.
+<p>
+    FKPQ SUMBAR
+</p>
+
+   <p>Pulau Punjung, Kab. Dharmasraya</p>
+<p>Sumatera Barat, Indonesia</p>
+<h2>Media Sosial</h2>
+
+<p>
+    Ikuti HUI TEKNO melalui media sosial kami.
+</p>
+
+<p>
+    <a href="#" target="_blank">Facebook</a>
+    |
+    <a href="#" target="_blank">Instagram</a>
+    |
+    <a href="#" target="_blank">TikTok</a>
+    |
+    <a href="#" target="_blank">YouTube</a>
+</p>
+        </p>
+
+        <a href="https://wa.me/6285831434588" target="_blank">
+            Hubungi via WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 FKPQ SUMBAR
+    </p>
+
+</footer>
+<script>
+
+function tampilkanWaktu() {
+
+    const sekarang = new Date();
+
+    const tanggal = sekarang.toLocaleDateString("id-ID", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    });
+
+    const jam = sekarang.toLocaleTimeString("id-ID");
+
+    document.getElementById("tanggal").textContent = tanggal;
+    document.getElementById("jam").textContent = jam;
+}
+
+tampilkanWaktu();
+
+setInterval(tampilkanWaktu, 1000);
+
+</script>
+</body>
+</html>
